@@ -8,10 +8,10 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Csomponent\Routing\Annotation\Route;
 
 
-class acceuilController {
+class acceuilController extends AbstractController {
 
-    #[Route('templates/acceuil')]
+    #[Route('/acceuil')]
     public function acceuil() {
-        return this->render('templates/acceuil.php');
+        return $this->render('acceuil.html');
     }
 }
